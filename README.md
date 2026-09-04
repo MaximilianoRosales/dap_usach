@@ -2,6 +2,7 @@
 
 Análisis del proyecto disposición a pagar (DAP) — USACH
 
+
 ## Contenido del repositorio
 
 - `data-raw/` — Base de datos brutos (sin modificar)
