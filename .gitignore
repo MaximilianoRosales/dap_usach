@@ -1,4 +1,6 @@
-.Rproj.user
 .Rhistory
 .RData
-.Ruserdata
+.Rproj.user/
+renv/activate.R           # Opcional: algunos lo excluyen
+data-raw/*               # Si contiene datos sensibles
+output/*                 # Pueden excluirse si son outputs regenerables
