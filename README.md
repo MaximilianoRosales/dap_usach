@@ -35,13 +35,6 @@ Ejecuta los scripts en orden:
 1. `scripts/01-import.R` — Importar datos desde Google Form
 2. `scripts/02-clean.R` — Limpieza y validación
 3. `scripts/03-analysis.R` — Análisis PLS-SEM y descriptivas
-4. `scripts/04-figures.R` — Generación de gráficos
-
-O ejecuta todo de una vez:
-```r
-source("scripts/00-run-all.R")
-```
-
 
 
 ## Metodología
