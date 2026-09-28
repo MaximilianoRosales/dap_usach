@@ -10,7 +10,6 @@ Análisis del proyecto disposición a pagar (DAP) — USACH
 - `scripts/` — Scripts de limpieza, análisis y (futuras) figuras
 - `output/` — Tablas, gráficos y resultados
 - `R/` — Funciones reutilizables
-- `docs/` — Documentación adicional
 - `renv.lock` — Versiones exactas de paquetes (reproducibilidad)
 
 
