@@ -7,26 +7,13 @@ Análisis del proyecto disposición a pagar (DAP) — USACH
 
 - `data-raw/` — Base de datos brutos (sin modificar)
 - `data/` — Base de datos procesadas/limpias
-- `scripts/` — Scripts de limpieza, análisis y figuras
+- `scripts/` — Scripts de limpieza, análisis y (futuras) figuras
 - `output/` — Tablas, gráficos y resultados
 - `R/` — Funciones reutilizables
 - `docs/` — Documentación adicional
 - `renv.lock` — Versiones exactas de paquetes (reproducibilidad)
 
-## Requisitos
 
-- **R versión:** 4.x+
-- **RStudio:** Recomendado para mayor facilidad
-
-## Instalación de dependencias
-
-Para reproducir el análisis exactamente, ejecuta en la consola de R:
-
-```r
-renv::restore()
-```
-
-Esto instala automáticamente todos los paquetes en las versiones correctas.
 
 ## Flujo de trabajo
 
