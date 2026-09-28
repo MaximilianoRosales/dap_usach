@@ -42,15 +42,9 @@ O ejecuta todo de una vez:
 source("scripts/00-run-all.R")
 ```
 
-## Datos
-
-Los datos brutos se encuentran en `data-raw/`. Para regenerarlos:
-1. Exportar Google Form como CSV
-2. Guardar en `data-raw/` con nombre `responses.csv`
 
 
 ## Metodología
 
 - **Método:** Contingent Valuation (payment card format)
 - **Análisis:** PLS-SEM via `seminr` o `plspm`
-- **Marco teórico:** Theory of Planned Behavior (TPB)
