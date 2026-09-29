@@ -128,14 +128,17 @@ cat("IMPORTANCIA DE ATRIBUTOS - EFA (1 factor):\n")
 efa_atr <- fa(atr_items, nfactors = 1, rotate = "none", fm = "ml")
 print(efa_atr$loadings)
 
-var_explained_atr <- sum(efa_atr$loadings^2) / nrow(efa_atr$loadings) * 100
+efa_hc <- fa(hc_items, nfactors = 1, rotate = "none", fm = "ml")
+print(efa_hc$loadings)
+
+var_explained_hc <- sum(efa_hc$loadings^2) / nrow(efa_hc$loadings) * 100
 cat("\nVarianza explicada por Factor 1:", round(var_explained_atr, 1), "%\n")
 
 if (var_explained_atr > 50) {
   cat("✓ PASA: Factor explica > 50% de varianza\n")
-} else if (var_explained_atr > 40 & alpha_atr$total$raw_alpha > 0.80) {
-  cat("⚠ BORDERLINE: Varianza", round(var_explained_atr, 1), 
-      "% pero Cronbach's α =", round(alpha_atr$total$raw_alpha, 3), "(excelente)\n")
+} else if (var_explained_atr > 40 & alpha_hc$total$raw_alpha > 0.80) {
+  cat("⚠ BORDERLINE: Varianza", round(var_explained_hc, 1), 
+      "% pero Cronbach's α =", round(alpha_hc$total$raw_alpha, 3), "(excelente)\n")
   cat("  → ACEPTABLE: Se mantiene el índice debido a confiabilidad interna fuerte\n")
 } else {
   cat("✗ FALLA: Factor explica < 50% de varianza.\n")

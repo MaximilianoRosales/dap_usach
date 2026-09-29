@@ -277,9 +277,9 @@ cat("Edad - Media:", round(mean(df_clean$edad, na.rm = T), 1),
 cat("Tamaño hogar - Media:", round(mean(df_clean$hhsize, na.rm = T), 1), "\n")
 
 cat("\nÍTEMS LIKERT - Rango esperado (1-6):\n")
-items_likert <- df_clean %>%
-  select(hc1, hc2, hc3, hc4, ec1, ec2, ec3, ec4, pc2, pc3, pc4, starts_with("atr_")) %>%
-  pivot_longer(everything(), names_to = "item", values_to = "valor")
+#items_likert <- df_clean %>%
+#  select(hc1, hc2, hc3, hc4, ec1, ec2, ec3, ec4, pc2, pc3, pc4, starts_with("atr_")) %>%
+#  pivot_longer(everything(), names_to = "item", values_to = "valor")
 
 cat("Mínimo:", min(items_likert$valor, na.rm = T), "\n")
 cat("Máximo:", max(items_likert$valor, na.rm = T), "\n")
