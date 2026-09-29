@@ -8,8 +8,6 @@ Análisis del proyecto disposición a pagar (DAP) — USACH
 - `data-raw/` — Base de datos brutos (sin modificar)
 - `data/` — Base de datos procesadas/limpias
 - `scripts/` — Scripts de limpieza, análisis y (futuras) figuras
-- `output/` — Tablas, gráficos y resultados
-- `R/` — Funciones reutilizables
 - `renv.lock` — Versiones exactas de paquetes (reproducibilidad)
 
 
